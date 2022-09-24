@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>events</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Netflix</title>
 </head>
 <body>
-   
+    <div class="container">
+        <img src="Netflix_2015_logo.png" alt="" id="logo">
+        <header>
+            <h1>NET<span>FLIX</span></h1>
+            <p>Thank you for signing up Netflix. Tell us more about your self</p>
+        </header>
+        <div class="form">
+            <form action="result.html" >
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required class="uzun"><br>
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" placeholder="Age" min="18" required class="uzun"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="Email" id="email" placeholder="Enter your Email" required class="uzun">
 
-<script src="javaScript.js"></script>    
+                <p>Content type</p>
+                <select name="content type" id="">
+                    <option value="none" selected disabled>make your choise</option>
+                    <option value="series">Series</option>
+                    <option value="movies">Movies</option>
+                    <option value="tvshows">Tv Shows</option>
+                </select>
+                <p>Movie type</p>
+                <label><input type="checkbox" name="comedy" >Comedy</label><br>
+                <label><input type="checkbox" name="action">Action</label><br>
+                <label><input type="checkbox" name="romance">Romance</label>
+                <p>Gender</p>
+                <label> <input type="radio" name="gender" value="Male">Male</label><br>
+                <label> <input type="radio" name="gender" value="Female"> Female</label><br>
+                <label> <input type="radio" name="gender" value="Other"> Other</label><br>
+                <p>Feed back</p>
+                <textarea name="comment" cols="40" rows="7" placeholder="Enter your comment..." style="resize:none ;"></textarea><br>
+                
+                <div class="submit"><input type="submit" value="Submit" id="submit"></div>
+                
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>
