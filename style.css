@@ -90,3 +90,27 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 transition: width 2s, height 2s, background-color 2s,transform 2s; /*submit butonunu döndürme süreleri*/
 
 }
+#submit:hover{
+    background-color: red;
+    /* width:220px ;
+    height: 60px;  */
+    transform: scale(1.2) ;
+    box-shadow: 15px 15px 15px #333333;
+    transition: opacity 2s;
+    opacity: 1;
+    transform: rotate(360deg); /*submit butonu döndürme kodu*/
+    transition: width 2s, height 2s, background-color 2s,transform 2s;
+}
+.uzun, select, textarea{
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    color: #aeaeae;
+    font-size: 1rem;
+}
+::placeholder{
+    color: #aeaeae;
+    opacity: 1;
+    font-size: 1rem;
+}
