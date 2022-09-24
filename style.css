@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.698), rgba(0, 0, 0, 0.353) ), url(background_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.container{
+    margin: 70px auto;
+}
